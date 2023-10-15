@@ -2189,6 +2189,8 @@ class MaskRCNN():
         self.keras_model.compile(
             optimizer=optimizer,
             loss=[None] * len(self.keras_model.outputs))
+        
+        self.keras_model.metrics_tensors = []
 
         # Add metrics for losses
         for name in loss_names:

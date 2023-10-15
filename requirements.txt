@@ -17,3 +17,4 @@ m2w64-toolchain
 git
 graphviz
 keras==2.0.8
+tensorflow==1.14.0

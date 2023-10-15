@@ -219,7 +219,7 @@ def train(model):
     print("Training network heads")
     model.train(dataset_train, dataset_val,
                 learning_rate=config.LEARNING_RATE,
-                epochs=30,
+                epochs=60,
                 augmentation=augmentation,
                 layers='heads')
                 #custom_callbacks=[mean_average_precision_callback])
